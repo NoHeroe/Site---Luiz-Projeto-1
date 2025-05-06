@@ -9,12 +9,19 @@
     .fade-in { animation: fadeIn 1.5s ease-in forwards; opacity: 0; }
     @keyframes fadeIn { to { opacity: 1; } }
     body {
-      background-color: #0c1c2c;
-      background-image: url('dna-bg.png');
-      background-repeat: no-repeat;
-      background-position: center top;
-      background-size: cover;
-    }
+  background-color: #0c1c2c;
+  background-image: url('dna-bg.png');
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 100% auto; /* cobre horizontalmente em mobile */
+}
+
+@media (min-width: 768px) {
+  body {
+    background-size: contain;
+    background-position: top right;
+  }
+}
   </style>
 </head>
 <body class="text-white font-sans leading-relaxed">
