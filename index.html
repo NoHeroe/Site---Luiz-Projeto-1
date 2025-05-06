@@ -8,46 +8,48 @@
     html { scroll-behavior: smooth; }
     .fade-in { animation: fadeIn 1.5s ease-in forwards; opacity: 0; }
     @keyframes fadeIn { to { opacity: 1; } }
+    body {
+      background-color: #0c1c2c;
+      background-image: url('dna-bg.svg');
+      background-repeat: no-repeat;
+      background-position: center top;
+      background-size: cover;
+    }
   </style>
 </head>
-<body class="bg-zinc-900 text-white font-sans leading-relaxed">
+<body class="text-white font-sans leading-relaxed">
   <!-- Hero Section -->
   <section class="min-h-screen flex flex-col md:flex-row items-center justify-center p-8 gap-8 fade-in">
     <img src="capa-livro.jpg" alt="Capa do Livro" class="w-72 md:w-96 rounded-xl shadow-xl" />
     <div class="max-w-xl text-center md:text-left">
       <h1 class="text-3xl md:text-5xl font-extrabold mb-4">A ciência encontra Deus no código genético.</h1>
       <p class="text-lg mb-6">Conteúdo complementar ao livro que mostra como restaurar corpo, mente e espírito com práticas ancestrais.</p>
-      <a href="#formulario" class="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-full text-lg transition">Baixar o Manual da Ancestralidade</a>
+      <a href="#formulario" class="bg-cyan-500 hover:bg-cyan-600 text-white px-6 py-3 rounded-full text-lg transition">Baixar o Manual da Ancestralidade</a>
     </div>
- <section id="formulario" class="p-8 text-center"> 
- <form action="https://formsubmit.co/azuosraul999@gmail.com" method="POST" class="max-w-md mx-auto flex flex-col gap-4">
-  <input type="hidden" name="_subject" value="Novo cadastro do manual">
-  <input type="text" name="nome" placeholder="Nome" required class="p-3 rounded bg-zinc-800 text-white border border-zinc-700" />
-  <input type="email" name="email" placeholder="E-mail" required class="p-3 rounded bg-zinc-800 text-white border border-zinc-700" />
-  <input type="text" name="whatsapp" placeholder="WhatsApp (opcional)" class="p-3 rounded bg-zinc-800 text-white border border-zinc-700" />
-  <input type="hidden" name="_captcha" value="false">
-  <input type="hidden" name="_next" value="https://noheroe.github.io/Site---Luiz-Projeto-1/agradecimento.html">
-  <button type="submit" class="bg-green-600 hover:bg-green-700 px-6 py-3 rounded-full font-semibold">Baixar agora</button>
-</form>
-  </section>
-<!-- Rodapé -->
-<footer class="bg-zinc-800 text-zinc-300 py-8 mt-16">
-  <div class="max-w-6xl mx-auto px-6 flex flex-col items-center text-sm gap-4 text-center">
-    <div>
-      © 2024 Luiz Alexandre Combat. Todos os direitos reservados.
+  </section>   <!-- Formulário -->  <section id="formulario" class="p-8 text-center mt-12 fade-in">
+    <h2 class="text-2xl font-bold mb-6">Receba o Manual gratuitamente</h2>
+    <form action="https://formsubmit.co/azuosraul999@gmail.com" method="POST" class="max-w-md mx-auto flex flex-col gap-4">
+      <input type="hidden" name="_subject" value="Novo cadastro do manual">
+      <input type="text" name="nome" placeholder="Nome" required class="p-3 rounded bg-zinc-800 text-white border border-zinc-700" />
+      <input type="email" name="email" placeholder="E-mail" required class="p-3 rounded bg-zinc-800 text-white border border-zinc-700" />
+      <input type="text" name="whatsapp" placeholder="WhatsApp (opcional)" class="p-3 rounded bg-zinc-800 text-white border border-zinc-700" />
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://noheroe.github.io/Site---Luiz-Projeto-1/agradecimento.html">
+      <button type="submit" class="bg-cyan-500 hover:bg-cyan-600 px-6 py-3 rounded-full font-semibold">Baixar agora</button>
+    </form>
+  </section>  <!-- Rodapé -->  <footer class="bg-zinc-800 text-zinc-300 py-8 mt-16">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col items-center text-sm gap-4 text-center">
+      <div>
+        © 2024 Luiz Alexandre Combat. Todos os direitos reservados.
+      </div>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="https://www.instagram.com/ocodigodedeus" target="_blank" class="hover:text-white transition">Instagram</a>
+        <a href="#" class="hover:text-white transition">Telegram</a>
+        <a href="termos.html" class="hover:text-white transition">Termos de Uso</a>
+        <a href="https://wa.me/+556596154991" target="_blank" class="hover:text-white transition">Contato</a>
+      </div>
     </div>
-    <div class="flex flex-wrap justify-center gap-4">
-      <a href="https://www.instagram.com/ocodigodedeus?igsh=MTN3MWxqcjY2aWljbA==" target="_blank" class="hover:text-white transition">Instagram</a>
-      <a href="#" class="hover:text-white transition">Telegram</a>
-      <a href="termos.html" class="hover:text-white transition">Termos de Uso</a>
-      <a href="https://wa.me/+55 65 9615-4991" target="_blank">Contato</a>
-    </div>
-  </div>
-</footer>
-<script src="https://unpkg.com/scrollreveal"></script>
-<script>
-  ScrollReveal().reveal('.fade-in', { distance: '40px', duration: 800, origin: 'bottom', interval: 100 });
-</script>
-<div>
-<body>
-<html>
+  </footer>  <!-- ScrollReveal -->  <script src="https://unpkg.com/scrollreveal"></script>  <script>
+    ScrollReveal().reveal('.fade-in', { distance: '40px', duration: 800, origin: 'bottom', interval: 100 });
+  </script></body>
+</html>
