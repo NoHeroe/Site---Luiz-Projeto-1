@@ -19,14 +19,16 @@
       <p class="text-lg mb-6">Conteúdo complementar ao livro que mostra como restaurar corpo, mente e espírito com práticas ancestrais.</p>
       <a href="#formulario" class="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-full text-lg transition">Baixar o Manual da Ancestralidade</a>
     </div>
-  </section>  <!-- Formulário (placeholder) -->  <section id="formulario" class="p-8 text-center">
-    <h2 class="text-2xl font-bold mb-4">Receba o Manual gratuitamente</h2>
-    <form class="max-w-md mx-auto flex flex-col gap-4">
-      <input type="text" placeholder="Nome" class="p-3 rounded bg-zinc-800 text-white border border-zinc-700" />
-      <input type="email" placeholder="E-mail" class="p-3 rounded bg-zinc-800 text-white border border-zinc-700" />
-      <input type="text" placeholder="WhatsApp (opcional)" class="p-3 rounded bg-zinc-800 text-white border border-zinc-700" />
-      <button type="submit" class="bg-green-600 hover:bg-green-700 px-6 py-3 rounded-full font-semibold">Baixar agora</button>
-    </form>
+  </section> 
+ <!-- Formulário (placeholder) -->  <form action="https://formsubmit.co/luizcombatmege@gmail.com" method="POST" class="max-w-md mx-auto flex flex-col gap-4">
+  <input type="hidden" name="_subject" value="Novo cadastro do manual">
+  <input type="text" name="nome" placeholder="Nome" required class="p-3 rounded bg-zinc-800 text-white border border-zinc-700" />
+  <input type="email" name="email" placeholder="E-mail" required class="p-3 rounded bg-zinc-800 text-white border border-zinc-700" />
+  <input type="text" name="whatsapp" placeholder="WhatsApp (opcional)" class="p-3 rounded bg-zinc-800 text-white border border-zinc-700" />
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_next" value="manual.pdf">
+  <button type="submit" class="bg-green-600 hover:bg-green-700 px-6 py-3 rounded-full font-semibold">Baixar agora</button>
+</form>
   </section>
 <!-- Rodapé -->
 <footer class="bg-zinc-800 text-zinc-300 py-8 mt-16">
