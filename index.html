@@ -114,5 +114,31 @@
       </div>
     </div>
   </footer>
+<!-- já existe: -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!-- novo bloco de configuração: -->
+  <script>
+    const sr = ScrollReveal({
+      distance: '50px',
+      duration: 800,
+      easing: 'ease-out',
+      reset: false // não repete a animação ao rolar de volta
+    });
+
+    // Hero
+    sr.reveal('#hero img', { origin: 'left', delay: 200 });
+    sr.reveal('#hero div', { origin: 'right', delay: 400 });
+
+    // Seções principais
+    sr.reveal('#intro h2, #intro details', { origin: 'bottom', interval: 200 });
+    sr.reveal('#problema h2, #problema p', { origin: 'top', interval: 200 });
+    sr.reveal('#solucao h2, #solucao .grid > div', { origin: 'bottom', interval: 150 });
+    sr.reveal('#conteudo h2, #conteudo details', { origin: 'left', interval: 150 });
+
+    // CTA e formulário
+    sr.reveal('#cta h2, #cta a', { origin: 'bottom', delay: 300 });
+    sr.reveal('#formulario form', { origin: 'right', delay: 300 });
+  </script>
 </body>
 </html>
